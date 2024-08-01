@@ -1,16 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="Assets/Images/Screenshot 2024-08-01 205026.png" alt="" />
+          <ul
+            class="nav nav-tabs d-flex justify-content-center align-items-center mt-3 gap-1"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active tabBtn"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Registration
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link tabBtn"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Download ID Card
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link tabBtn"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact"
+                type="button"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+              >
+                Results
+              </button>
+            </li>
+          </ul>
 
+          <!-- Registration TAB -->
 
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="container mt-4">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Select City</label
+                      >
+                      <select
+                        class="form-select inputFields"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select City</option>
+                        <option value="1">Karachi</option>
+                        <option value="2">Islamabad</option>
+                        <option value="3">Peshawar</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Select campus</label
+                      >
+                      <select
+                        class="form-select inputFields"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select campus</option>
+                        <option value="1">Bahadurabad</option>
+                        <option value="2">Gulshan</option>
+                        <option value="3">Aliabad</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Full name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Full name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >CNIC</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="CNIC"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Date of birth</label
+                      >
+                      <input
+                        type="date"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Select course or event</label
+                      >
+                      <select
+                        class="form-select inputFields"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select course or event</option>
+                        <option value="1">Web and App Development</option>
+                        <option value="2">Graphic Design</option>
+                        <option value="3">Video Animation</option>
+                        <option value="4">Video Animation</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Select class preference</label
+                      >
+                      <select
+                        class="form-select inputFields"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select class preference</option>
+                        <option value="1">Weekdays(Monday to Friday)</option>
+                        <option value="2">Weekend(Saturday to Sunday)</option>
+                        <option value="3">Both</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Father name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Father name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Phone</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Phone"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Father's CNIC (optional)</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Father's CNIC (optional)"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Select gender</label
+                      >
+                      <select
+                        class="form-select inputFields"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">FeMale</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Address</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Address"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Last qualification</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Last qualification"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Do you have a Laptop?</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Do you have a Laptop?"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Picture</label
+                      >
+                      <input
+                        type="file"
+                        class="form-control imgFile inputFields"
+                        id="uploadBtn"
+                      />
+                      <div class="d-flex gap-4">
+                        <label for="uploadBtn" class="form-label imgLabel"
+                          >+ Upload</label
+                        >
+                        <p class="fontSize">
+                          With white or blue background <br />
+                          File size must be less than 1MB <br />
+                          File type: jpg, jpeg, png <br />
+                          Upload your recent passport size picture <br />
+                          Your Face should be clearly visible without any
+                          Glasses
+                        </p>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <p>
+                      1. I hereby, solemnly declare that the data and facts
+                      mentioned herein are true and correct to the best of my
+                      knowledge. Further, I will abide by all the <br />
+                      established and future regulations and policies of SWIT
+                      <br />
+                      2. I hereby accept the responsibilities of good conduct
+                      and guarantee that I will not be involved in any other
+                      activity, political or ethical, but learning during my
+                      <br />stay in the program. <br />
+                      3. Defiance will render my admission canceled at any point
+                      in time. <br />
+                      4. Upon completion, of the course, I will complete the
+                      required project by SWIT. <br />
+                      5. It's mandatory for female students to wear abaya/hijab
+                      in the class
+                    </p>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary submitbtn" type="button">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- Download ID Card TAb -->
+
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="container">
+                <div class="row cnicBox">
+                  <div class="col-md-12 w-50">
+                    <div class="mb-3 mt-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >CNIC (Which you provided during form submission)
+                      </label>
+                      <input
+                        type="number"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="CNIC (Which you provided during form submission)
+                                        "
+                      />
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary submitbtn" type="button">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Results TAB -->
+
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              <div class="container">
+                <div class="row cnicBox">
+                  <div class="col-md-12 w-50">
+                    <div class="mb-3 mt-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Roll number</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control inputFields"
+                        id="exampleFormControlInput1"
+                        placeholder="Roll number"
+                      />
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary submitbtn" type="button">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
