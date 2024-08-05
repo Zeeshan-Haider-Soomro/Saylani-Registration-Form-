@@ -171,12 +171,13 @@
                       <select
                         class="form-select inputFields"
                         aria-label="Default select example"
+                        id="courseSelection"
                       >
                         <option selected>Select course or event</option>
-                        <option value="1">Web and App Development</option>
-                        <option value="2">Graphic Design</option>
-                        <option value="3">Video Animation</option>
-                        <option value="4">Video Animation</option>
+                        <option value="Web and App Development">Web and App Development</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Video Animation">Video Animation</option>
+                        <option value="Video Animation">Video Animation</option>
                       </select>
                     </div>
                     <div class="mb-3">
@@ -292,11 +293,13 @@
                         type="file"
                         class="form-control imgFile inputFields"
                         id="uploadBtn"
+                        onchange="submition()"
                       />
                       <div class="d-flex gap-4">
                         <label for="uploadBtn" class="form-label imgLabel"
                           >+ Upload</label
                         >
+                        <img id="showImage" src="" alt="">
                         <p class="fontSize">
                           With white or blue background <br />
                           File size must be less than 1MB <br />
@@ -309,6 +312,7 @@
                     </div>
                     <br />
                     <hr />
+                    <p id="erros"></p>
                     <p>
                       1. I hereby, solemnly declare that the data and facts
                       mentioned herein are true and correct to the best of my
@@ -352,21 +356,24 @@
                 <div class="row cnicBox">
                   <div class="col-md-12 w-100">
                     <div class="mb-3 mt-3">
-                      <label for="exampleFormControlInput1" class="form-label"
+                      <label for="downloadIdCard" class="form-label"
                         >CNIC (Which you provided during form submission)
                       </label>
                       <input
                         type="number"
                         class="form-control inputFields"
-                        id="exampleFormControlInput1"
-                        placeholder="CNIC (Which you provided during form submission)
-                                        "
+                        id="downloadIdCard"
+                        placeholder="CNIC (Which you provided during form submission)"
                       />
                     </div>
                     <div class="d-grid gap-2">
-                      <button class="btn btn-primary submitbtn" type="button">
+                      <button onclick="userCard()" class="btn btn-primary submitbtn" type="button">
                         Submit
                       </button>
+                    </div>
+                    <div class="profile">
+
+                      <p id="error"></p>
                     </div>
                   </div>
                 </div>
@@ -400,7 +407,6 @@
                         Search
                       </button>
                     </div>
-                    <p id="getset"></p>
                   </div>
                 </div>
               </div>
@@ -409,6 +415,12 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

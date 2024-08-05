@@ -61,3 +61,35 @@ label{
 .fontSize{
     font-size: 12px;
 }
+#showImage{
+    height: 120px;
+    width: 100px;
+}
+.profile{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.imgset{
+    text-align: center;
+    width: 100%;
+}
+.size{
+    border-bottom: 5px solid #1a6dbb;
+    border-top: 5px solid #8dc63f;
+    border-right: 5px solid #8dc63f;
+    border-left: 5px solid #0d6db7;
+    height: 100px;
+    width: 100px;
+}
+#error, #erros{
+    color: red;
+}
+.card{
+    border-top: 5px solid #1a6dbb;
+    border-bottom: 5px solid #8dc63f;
+    border-left: 5px solid #8dc63f;
+    border-right: 5px solid #0d6db7;
+    border-radius: 20px;
+    text-align: start;
+}
